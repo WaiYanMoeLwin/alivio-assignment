@@ -22,6 +22,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+a.button {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 1.5rem 3rem;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
 /* Default Styles for Desktop */
 html {
     font-size: calc(16px * var(--scale-factor));
@@ -78,15 +90,11 @@ header .logo {
     text-decoration: none;
 }
 
-a.button {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: var(--primary-color);
+.nav-buttons a.button {
     padding: 1rem 2.75rem;
-    border-radius: 0.25rem;
-    font-size: 1.25rem;
-    text-align: center;
+    margin-top: 0;
 }
+
 
 
 /* Main Styles */
@@ -109,7 +117,6 @@ a.button {
 .hero p {
     color: #424242;
     font-size: 1.25rem;
-    margin-bottom: 2.5rem;
 }
 
 /* Feature Styles */
@@ -232,7 +239,6 @@ a.button {
 .story p {
     color: #ffffff;
     font-size: 1.5rem;
-    margin-bottom: 2.5rem;
 }
 
 .story .video {
@@ -261,7 +267,7 @@ a.button {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    margin: 5rem 0;
+    margin: 5rem 0 10rem 0;
     padding: 2.5rem 3.75rem 5rem 3.75rem;
     position: relative;
     gap: 2rem;
@@ -278,11 +284,12 @@ a.button {
 }
 
 .product .text {
-    width: 50%;
+    width: 45%;
     font-size: 1.25rem;
 }
 
 .product h1 {
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: #424242;
 }
@@ -292,8 +299,9 @@ a.button {
     margin-bottom: 1.25rem;
 }
 
-.product .text p {
-    margin-bottom: 2.5rem;
+.product p {
+    margin: 0;
+    line-height: 2rem;
 }
 
 .product .image-overlay {
@@ -355,4 +363,56 @@ a.button {
     line-height: 2rem;
     font-size: 0.625rem;
     padding: 0 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 3.5rem 3.75rem 5rem 3.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2.5rem;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+footer .footer-content h1 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+footer .footer-content .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-content .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-logo {
+    margin: 3.25rem;
+    padding: 0.5rem;
+    height: 2rem;
+    width: auto;
+}
+
+footer .footer-logo img {
+    height: 100%;
+    width: auto;
 }
