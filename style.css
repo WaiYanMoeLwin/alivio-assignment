@@ -78,12 +78,14 @@ header .logo {
     text-decoration: none;
 }
 
-.nav-buttons a.start-trial {
+a.button {
     color: #ffffff;
     text-decoration: none;
     background-color: var(--primary-color);
-    padding: 0.75rem 2.25rem;
+    padding: 1rem 2.75rem;
     border-radius: 0.25rem;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 
@@ -107,16 +109,6 @@ header .logo {
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
-}
-
-a.find-your-way {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    border-radius: 0.25rem;
-    font-size: 1.25rem;
-    padding: 1.25rem 3rem;
-    text-align: center;
 }
 
 /* Feature Styles */
@@ -213,4 +205,51 @@ a.find-your-way {
 
 .step:nth-child(2) {
     margin-top: 15rem;
+}
+
+/* Success Story Styles */
+.story {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+    padding: 15rem 3.75rem;
+    background-color: var(--secondary-color);
+}
+
+.story .text {
+    width: 45%;
+}
+
+.story h1 {
+    color: #ffffff;
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.story p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.story .video {
+    position: relative;
+    width: 50%;
+}
+
+.story .video img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.story .video img:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: auto;
 }
