@@ -2,7 +2,7 @@
 :root {
     --primary-color: #01996d;
     --secondary-color: #245852;
-    --text-color: #424242;
+    --text-color: #484848;
     --scale-factor: calc(100vw / 1440px);
 }
 
@@ -107,6 +107,7 @@ a.button {
 }
 
 .hero p {
+    color: #424242;
     font-size: 1.25rem;
     margin-bottom: 2.5rem;
 }
@@ -252,4 +253,106 @@ a.button {
     transform: translate(-50%, -50%);
     width: 10%;
     height: auto;
+}
+
+/* Product Styles */
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin: 5rem 0;
+    padding: 2.5rem 3.75rem 5rem 3.75rem;
+    position: relative;
+    gap: 2rem;
+}
+
+.product .image {
+    width: 49%;
+}
+
+.product .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.product .text {
+    width: 50%;
+    font-size: 1.25rem;
+}
+
+.product h1 {
+    font-size: 1.5rem;
+    color: #424242;
+}
+
+.product h2 {
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+
+.product .text p {
+    margin-bottom: 2.5rem;
+}
+
+.product .image-overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 2.25rem;
+    background-color: #ffffff;
+    box-shadow: 0px 3.62px 18.11px 0px rgba(165, 165, 165, 0.25);
+    border-radius: 0.25rem;
+    width: 20.5%;
+    color: #000000;
+    padding: 0 3.5rem;
+    box-sizing: border-box;
+}
+
+.product .image-overlay h1 {
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 1.25rem 0 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+}
+
+.product .image-overlay .user-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.product .image-overlay .user-image img {
+    width: 10rem;
+    height: 10rem;
+    clip-path: circle(25% at 50% 40%);
+    position: absolute;
+    top: -0.5rem;
+}
+
+.product .image-overlay .user-image p {
+    margin: 6.5rem 0 0 0;
+    font-size: 0.75rem;
+}
+
+.product .image-overlay h2 {
+    color: #000000;
+    font-size: 1rem;
+    text-align: left;
+    margin: 0.5rem auto;
+}
+
+.product .image-overlay ul {
+    line-height: 2rem;
+    font-size: 0.625rem;
+    padding: 0 1rem;
 }
