@@ -128,43 +128,42 @@ header .logo {
     margin-bottom: 5rem;
 }
 
-.hero h1 {
+.hero-heading {
     font-size: 4rem;
 }
 
-.hero p {
+.hero-description {
     color: #424242;
     font-size: 1.25rem;
 }
 
 /* Feature Styles */
-.how-it-works-section {
+.how-it-works {
     padding: 0 3.75rem;
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
 }
 
-.how-it-works-intro h1 {
+.how-it-works .how-it-works-heading {
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
 }
 
-.how-it-works {
+.how-it-works-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2.5rem;
     gap: 2.5rem;
 }
-
-.how-it-works h2 {
+.how-it-works-main-heading {
     font-size: 3rem;
     margin: 1rem 0;
     width: 90%;
 }
 
-.how-it-works div {
+.how-it-works-description {
     display: flex;
     font-size: 1.25rem;
     width: 100%;
@@ -176,6 +175,8 @@ header .logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 3.75rem;
+    margin-bottom: 5rem;
 }
 
 .step {
@@ -185,14 +186,16 @@ header .logo {
     position: relative;
 }
 
-.step-title h1 {
+.step-number {
+    font-family: 'Georgia', serif;
     color: rgba(1, 153, 109, 0.2);
     font-size: 9rem;
     font-weight: 400;
+    display: block;
     margin: 3rem 0;
 }
 
-.step-title h2 {
+.step-heading {
     position: absolute;
     font-size: 1.75rem;
     color: #000000;
@@ -200,10 +203,16 @@ header .logo {
     top: 8rem;
 }
 
-.step .step-description {
+.step-description {
     font-size: 1.25rem;
     margin-bottom: 3rem;
+}
 
+.step figure {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
 }
 
 .step img {
@@ -214,12 +223,11 @@ header .logo {
 
 .step .site-preview {
     position: absolute;
-    bottom: 21.25rem;
+    bottom: 25%;
     right: 0;
-    width: 1440px;
-    height: 1140px;
-    transform: scale(calc(185 * var(--scale-factor) / 1440));
-    transform-origin: bottom right;
+    width: 47.5%;
+    height: auto;
+    border-radius: 0.25rem;
 }
 
 .step:nth-child(2) {
@@ -237,17 +245,17 @@ header .logo {
     background-color: var(--secondary-color);
 }
 
-.story-description {
+.story-content {
     width: 45%;
 }
 
-.story h1 {
+.story-heading {
     color: #ffffff;
     font-size: 3.125rem;
     margin-bottom: 1.25rem;
 }
 
-.story p {
+.story-description {
     color: #ffffff;
     font-size: 1.5rem;
 }
@@ -301,23 +309,24 @@ header .logo {
     border-radius: 1rem;
 }
 
-.product-description {
+.product-content {
     width: 45%;
     font-size: 1.25rem;
 }
 
-.product-description h1 {
+.product-heading {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: #424242;
+    margin: 0;
 }
 
-.product-description h2 {
+.product-main-heading {
     font-size: 3.125rem;
     margin-bottom: 1.25rem;
 }
 
-.product-description p {
+.product-description {
     margin: 0;
     line-height: 2rem;
 }
@@ -337,9 +346,8 @@ header .logo {
     box-sizing: border-box;
 }
 
-.product .profile-card h1 {
+.product .profile-label {
     color: #000000;
-    font-family: 'Lato', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
     margin: 1.25rem 0 1rem 0;
@@ -348,7 +356,7 @@ header .logo {
     text-underline-offset: 0.75rem;
 }
 
-.product .profile-card .profile-image {
+.product .profile-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,7 +365,7 @@ header .logo {
     position: relative;
 }
 
-.product .profile-card .profile-image img {
+.product .profile-image img {
     width: 10rem;
     height: 10rem;
     clip-path: circle(25% at 50% 40%);
@@ -365,12 +373,14 @@ header .logo {
     top: -0.5rem;
 }
 
-.product .profile-card .profile-image p {
+.product .profile-image figcaption {
     margin: 6.5rem 0 0 0;
     font-size: 0.75rem;
 }
 
-.product .profile-card h2 {
+.product .profile-content-label {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
     color: #000000;
     font-size: 1rem;
     text-align: left;
@@ -394,21 +404,21 @@ footer {
     gap: 2.5rem;
 }
 
-footer .footer-content {
+.footer-content {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     margin-bottom: 5rem;
 }
 
-footer .footer-content h1 {
+.footer-content .footer-brand {
     font-family: 'Avenir', sans-serif;
     font-size: 2.5rem;
     font-weight: 900;
     color: #ffffff;
 }
 
-footer .footer-content .footer-links {
+.footer-content .footer-links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -423,14 +433,14 @@ footer .footer-content .footer-links {
     margin-bottom: 0.5rem;
 }
 
-footer .footer-logo {
+.footer-logo {
     margin: 3.25rem;
     padding: 0.5rem;
     height: 2rem;
     width: auto;
 }
 
-footer .footer-logo img {
+.footer-logo img {
     height: 100%;
     width: auto;
 }
