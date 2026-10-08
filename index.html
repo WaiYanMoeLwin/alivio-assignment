@@ -1,22 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Alivio</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="public/logo.png" alt="Alivio Logo">
+            <img src="public/images/logo.png" alt="Alivio Logo">
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Why Alivio</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#why-alivio">Why Alivio</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#pricing">Pricing</a></li>
             </ul>
         </nav>
         <div class="nav-buttons">
@@ -26,17 +32,17 @@
     </header>
 
     <main>
-        <div class="hero">
+        <section class="hero">
             <h1>Be aware, Manage well.</h1>
             <p>
                 Everyone experiences stress in different ways.
                 Let Alivio guide you, in a personalized journal experience, to overcome your stress.
             </p>
             <a href="#" class="button">Find Your Way</a>
-        </div>
+        </section>
 
-        <div class="features">
-            <div class="feature-intro">
+        <section class="features">
+            <section id="why-alivio" class="feature-intro">
                 <h1>How it works</h1>
                 <div class="how-it-works">
                     <h2>Understand & Release the stress in 3 steps</h2>
@@ -52,9 +58,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="steps">
+            <section id="solutions" class="steps">
                 <div class="step">
                     <div class="title">
                         <h1>01</h1>
@@ -65,10 +71,8 @@
                         would you like to work on.
                         This way, we can fully personalize your journal!
                     </div>
-                    <img src="public/step1.png" alt="Step 1">
-                    <div class="preview">
-                        <iframe src="/"></iframe>
-                    </div>
+                    <img src="public/images/step1.png" alt="Step 1">
+                    <img class="preview" src="public/images/preview.png" alt="Preview">
                 </div>
                 <div class="step">
                     <div class="title">
@@ -79,7 +83,7 @@
                         Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you
                         manage your stress!
                     </div>
-                    <img src="public/step2.png" alt="Step 2">
+                    <img src="public/images/step2.png" alt="Step 2">
                 </div>
                 <div class="step">
                     <div class="title">
@@ -90,30 +94,30 @@
                         Now you are aware, and have a way to manage and overcome your own stress.
                         What are you waiting for? Alivio today!
                     </div>
-                    <img src="public/step3.png" alt="Step 3">
+                    <img src="public/images/step3.png" alt="Step 3">
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="story">
+        <section id="community" class="story">
             <div class="text">
                 <h1>Let's hear about Kayla's success story</h1>
                 <p>See how well Alivio works in a real customer’s life.</p>
                 <a href="#" class="button">Let's get started</a>
             </div>
             <div class="video">
-                <img src="public/story.png" alt="Story Video">
-                <img src="public/play_button.png" alt="Play Button">
+                <img src="public/images/story.png" alt="Story Video">
+                <img src="public/images/play-button.png" alt="Play Button">
             </div>
-        </div>
+        </section>
 
-        <div class="product">
+        <section id="pricing" class="product">
             <div class="image">
-                <img src="public/sample_user.png" alt="Sample User">
+                <img src="public/images/sample-user.png" alt="Sample User">
                 <div class="image-overlay">
                     <h1>Customized For</h1>
                     <div class="user-image">
-                        <img src="public/sample_user.png" alt="Sample User">
+                        <img src="public/images/sample-user.png" alt="Sample User">
                         <p>Mikayla</p>
                     </div>
                     <h2>Your custom contents</h2>
@@ -130,7 +134,7 @@
                 <p>Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
                 <a href="#" class="button">Find Your Way</a>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -144,7 +148,7 @@
             </div>
         </div>
         <div class="footer-logo">
-            <img src="public/logo-white.png" alt="Alivio Logo">
+            <img src="public/images/logo-white.png" alt="Alivio Logo">
         </div>
     </footer>
 </body>
