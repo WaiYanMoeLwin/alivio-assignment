@@ -34,7 +34,7 @@ a.button {
     margin-top: 3rem;
 }
 
-a:hover, a.button:hover, li:hover, button:hover {
+a:hover, a.button:hover, li:has(a):hover, button:hover {
     cursor: pointer;
     opacity: 0.8;
     transform: scale(1.05);
@@ -138,12 +138,12 @@ header .logo {
 }
 
 /* Feature Styles */
-.features {
+.how-it-works-section {
     padding: 0 3.75rem;
     margin: 5rem 0;
 }
 
-.feature-intro h1 {
+.how-it-works-intro h1 {
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 600;
@@ -185,14 +185,14 @@ header .logo {
     position: relative;
 }
 
-.title h1 {
+.step-title h1 {
     color: rgba(1, 153, 109, 0.2);
     font-size: 9rem;
     font-weight: 400;
     margin: 3rem 0;
 }
 
-.title h2 {
+.step-title h2 {
     position: absolute;
     font-size: 1.75rem;
     color: #000000;
@@ -200,7 +200,7 @@ header .logo {
     top: 8rem;
 }
 
-.step .description {
+.step .step-description {
     font-size: 1.25rem;
     margin-bottom: 3rem;
 
@@ -212,7 +212,7 @@ header .logo {
     border-radius: 1rem;
 }
 
-.step .preview {
+.step .site-preview {
     position: absolute;
     bottom: 21.25rem;
     right: 0;
@@ -237,7 +237,7 @@ header .logo {
     background-color: var(--secondary-color);
 }
 
-.story .text {
+.story-description {
     width: 45%;
 }
 
@@ -252,18 +252,18 @@ header .logo {
     font-size: 1.5rem;
 }
 
-.story .video {
+.story-video {
     position: relative;
     width: 50%;
 }
 
-.story .video img {
+.story-video img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
 }
 
-.story .video button.play-button {
+.story-video button.play-button {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -291,38 +291,38 @@ header .logo {
     gap: 2rem;
 }
 
-.product .image {
+.product-image {
     width: 49%;
 }
 
-.product .image img {
+.product-image img {
     width: 100%;
     height: auto;
     border-radius: 1rem;
 }
 
-.product .text {
+.product-description {
     width: 45%;
     font-size: 1.25rem;
 }
 
-.product h1 {
+.product-description h1 {
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     color: #424242;
 }
 
-.product h2 {
+.product-description h2 {
     font-size: 3.125rem;
     margin-bottom: 1.25rem;
 }
 
-.product p {
+.product-description p {
     margin: 0;
     line-height: 2rem;
 }
 
-.product .image-overlay {
+.product .profile-card {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -337,7 +337,7 @@ header .logo {
     box-sizing: border-box;
 }
 
-.product .image-overlay h1 {
+.product .profile-card h1 {
     color: #000000;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -348,7 +348,7 @@ header .logo {
     text-underline-offset: 0.75rem;
 }
 
-.product .image-overlay .user-image {
+.product .profile-card .profile-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,7 +357,7 @@ header .logo {
     position: relative;
 }
 
-.product .image-overlay .user-image img {
+.product .profile-card .profile-image img {
     width: 10rem;
     height: 10rem;
     clip-path: circle(25% at 50% 40%);
@@ -365,19 +365,19 @@ header .logo {
     top: -0.5rem;
 }
 
-.product .image-overlay .user-image p {
+.product .profile-card .profile-image p {
     margin: 6.5rem 0 0 0;
     font-size: 0.75rem;
 }
 
-.product .image-overlay h2 {
+.product .profile-card h2 {
     color: #000000;
     font-size: 1rem;
     text-align: left;
     margin: 0.5rem auto;
 }
 
-.product .image-overlay ul {
+.product .profile-card ul {
     line-height: 2rem;
     font-size: 0.625rem;
     padding: 0 1rem;
