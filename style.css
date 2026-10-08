@@ -34,6 +34,19 @@ a.button {
     margin-top: 3rem;
 }
 
+a:hover, a.button:hover, li:hover, button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:focus, a.button:focus, li:focus, button:focus {
+    border-radius: 0.25rem;
+    outline: 2px solid var(--primary-color);
+    outline-offset: 0.25rem;
+}
+
 /* Default Styles for Desktop */
 html {
     font-size: calc(16px * var(--scale-factor));
@@ -201,7 +214,7 @@ header .logo {
 
 .step .preview {
     position: absolute;
-    bottom: 19.875rem;
+    bottom: 21.25rem;
     right: 0;
     width: 1440px;
     height: 1140px;
@@ -250,13 +263,20 @@ header .logo {
     border-radius: 1rem;
 }
 
-.story .video img:nth-child(2) {
+.story .video button.play-button {
+    background-color: transparent;
+    border: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10%;
     height: auto;
+}
+
+.play-button img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* Product Styles */
