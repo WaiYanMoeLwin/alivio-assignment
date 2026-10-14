@@ -98,6 +98,9 @@ nav {
     gap: 2.5rem;
     align-items: center;
 }
+.nav-links ul {
+    gap: 4.75rem;
+}
 
 .nav-links {
     display: flex;
