@@ -12,12 +12,14 @@ body {
     margin: 0;
     font-family: Lato, sans-serif;
     color: var(--text-color);
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif;
     color: var(--primary-color);
+    font-size: 3.125rem;
     font-weight: 700;
 }
 
@@ -28,7 +30,6 @@ a.button {
     background-color: var(--primary-color);
     padding: 1.5rem 3rem;
     border-radius: 0.25rem;
-    font-size: 1.25rem;
     text-align: center;
     margin-top: 3rem;
 }
@@ -63,7 +64,6 @@ header {
     background-color: #ffffff;
     padding: 1rem 2rem;
     height: 2.5rem;
-    font-size: 1.25rem;
     border-bottom:#d6d6d6 1px solid;
     justify-content: space-between;
     align-items: center;
@@ -165,7 +165,6 @@ nav {
 
 .hero-description {
     color: #424242;
-    font-size: 1.25rem;
     line-height: 2rem;
     margin: 0;
 }
@@ -193,15 +192,12 @@ nav {
 
 .how-it-works-main-heading {
     grid-area: title;
-    font-size: 3rem;
     margin: 1rem 0;
-    width: 90%;
 }
 
 .how-it-works-description {
     grid-area: content;
     display: flex;
-    font-size: 1.25rem;
     width: 100%;
     align-items: center;
 }
@@ -240,7 +236,6 @@ nav {
 }
 
 .step-description {
-    font-size: 1.25rem;
     margin-bottom: 3rem;
 }
 
@@ -288,7 +283,6 @@ nav {
 
 .story-heading {
     color: #ffffff;
-    font-size: 3.125rem;
     margin-bottom: 1.25rem;
 }
 
@@ -349,7 +343,6 @@ nav {
 
 .product-content {
     grid-area: content;
-    font-size: 1.25rem;
 }
 
 .product-heading {
@@ -360,7 +353,6 @@ nav {
 }
 
 .product-main-heading {
-    font-size: 3.125rem;
     margin-bottom: 1.25rem;
 }
 
@@ -496,6 +488,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
     a.button {
         padding: 1rem 2rem;
         font-size: 1rem;
@@ -520,6 +515,7 @@ footer {
         width: 100%;
         background-color: #ffffff;
         padding: 1rem 2rem;
+        animation: rollDown 0.3s ease-in-out;
     }
     body:has(#hamburger-menu:target) .nav-links ul {
         flex-direction: column;
@@ -591,8 +587,8 @@ footer {
     .story-heading {
         font-size: 2.5rem;
     }
-    .story-description {
-        font-size: 1.25rem;
+    .story button.play-button {
+        width: 15%;
     }
     
     .product {
@@ -645,5 +641,16 @@ footer {
         width: 50%;
         left: 0.5rem;
         bottom: -4rem;
+    }
+}
+
+@keyframes rollDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
