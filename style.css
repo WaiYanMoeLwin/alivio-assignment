@@ -7,9 +7,9 @@
 
 /* Default Styles for Desktop */
 html {
-    font-size: 100%;
+    font-size: 62.5%; /* 1rem = 10px */
     scroll-behavior: smooth;
-    scroll-padding-top: 4.5rem;
+    scroll-padding-top: 8.5rem;
 }
 
 /* Global Styles */
@@ -19,14 +19,14 @@ body {
     margin: 0;
     font-family: Lato, sans-serif;
     color: var(--text-color);
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif;
     color: var(--primary-color);
-    font-size: 3.125rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -35,10 +35,10 @@ a.button {
     color: #ffffff;
     text-decoration: none;
     background-color: var(--primary-color);
-    padding: 1.5rem 3rem;
-    border-radius: 0.25rem;
+    padding: 2rem 5rem;
+    border-radius: 0.4rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 a:hover, a.button:hover, li:has(a):hover, button:hover {
@@ -49,9 +49,9 @@ a:hover, a.button:hover, li:has(a):hover, button:hover {
 }
 
 a:focus, a.button:focus, li:focus, button:focus {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     outline: 2px solid var(--primary-color);
-    outline-offset: 0.25rem;
+    outline-offset: 0.5rem;
 }
 
 
@@ -64,18 +64,18 @@ header {
     z-index: 1000;
     flex-direction: row;
     background-color: #ffffff;
-    padding: 1rem 2rem;
-    height: 2.5rem;
+    padding: 1.5rem 3.5rem;
+    height: 8rem;
     border-bottom:#d6d6d6 1px solid;
     justify-content: space-between;
     align-items: center;
-    gap: 15%;
+    gap: 12.5%;
+    box-sizing: border-box;
 }
 
 header .logo {
-    margin: 0.25rem;
-    padding: 0.5rem;
-    height: 1.25rem;
+    margin: auto 0;
+    height: 2rem;
 }
 
 .logo img {
@@ -95,11 +95,11 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 0;
-    gap: 2.5rem;
+    gap: 3.5rem;
     align-items: center;
 }
 .nav-links ul {
-    gap: 4.75rem;
+    gap: 7rem;
 }
 
 .nav-links {
@@ -123,7 +123,7 @@ nav {
 }
 
 .nav-buttons a.button {
-    padding: 1rem 2.75rem;
+    padding: 1.5rem 5rem;
     margin-top: 0;
 }
 
@@ -133,7 +133,7 @@ nav {
     justify-content: center;
     width: 3rem;
     height: 2rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     cursor: pointer;
     gap: 0.5rem;
 }
@@ -148,9 +148,10 @@ nav {
 
 .hamburger-menu-close {
     display: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
     color: var(--primary-color);
+    padding: 1rem;
 }
 
 /* Main Styles */
@@ -166,22 +167,23 @@ nav {
 
 .hero-content {
     position: absolute;
-    top: 15%;
-    left: 3.75rem;
+    top: 17.5rem;
+    left: 6rem;
     width: 33%;
 }
 
 .hero-heading {
-    font-size: 4rem;
+    font-size: 6.5rem;
+    margin: 0 0 3rem 0;
 }
 
 .hero-description {
     color: #424242;
-    line-height: 2rem;
+    line-height: 157%;
     margin: 0;
 }
 
-/* Feature Styles */
+/* How It Works Styles */
 .how-it-works {
     display: grid;
     grid-template-areas:
@@ -189,15 +191,15 @@ nav {
         "title content";
     grid-template-columns: 0.95fr 1fr;
     align-items: end;
-    padding: 0 3.75rem;
-    margin: 10rem 0 3.5rem 0;
-    gap: 0 4rem;
+    padding: 0 6rem;
+    margin: 17rem 0 5rem 0;
+    gap: 0 6.5rem;
 }
 
 .how-it-works-heading {
     grid-area: header;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -220,37 +222,41 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 3.75rem;
-    margin-bottom: 3rem;
-    gap: 3.125rem;
+    padding: 0 6rem;
+    margin: 0 0 5rem 0;
+    gap: 5rem;
 }
 
 .step {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    position: relative;
+    flex: 1;
+}
+
+.step-title {
     position: relative;
 }
 
 .step-number {
     font-family: 'Georgia', serif;
     color: rgba(1, 153, 109, 0.2);
-    font-size: 9.375rem;
+    font-size: 15rem;
     font-weight: 400;
     display: block;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 .step-heading {
     position: absolute;
-    font-size: 1.875rem;
+    font-size: 3rem;
     color: #000000;
-    left: 5rem;
-    top: 7.5rem;
+    left: 8rem;
+    bottom: 0;
 }
 
 .step-description {
-    margin-bottom: 3rem;
+    margin: 5rem 0;
 }
 
 .step figure {
@@ -258,25 +264,30 @@ nav {
     width: 100%;
     height: auto;
     margin: 0;
+    overflow: hidden;
 }
 
 .step img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
 }
 
 .step .site-preview {
     position: absolute;
-    bottom: 25%;
-    right: 0;
-    width: 47.5%;
+    bottom: 25.25%;
+    right: -1%;
+    width: 48%;
     height: auto;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
 
 .step:nth-child(2) {
-    margin-top: 15rem;
+    margin-top: 26rem;
+}
+
+.step:nth-child(3) {
+    margin-top: 5rem;
 }
 
 /* Success Story Styles */
@@ -286,10 +297,10 @@ nav {
         "content video";
     grid-template-columns: 0.9fr 1.1fr;
     align-items: end;
-    margin: 3rem 0;
-    padding: 14.25rem 3.75rem 16.5rem 3.75rem;
+    margin: 5rem 0;
+    padding: 23rem 6rem 26rem 6rem;
     background-color: var(--secondary-color);
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .story-content {
@@ -298,12 +309,12 @@ nav {
 
 .story-heading {
     color: #ffffff;
-    margin-bottom: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 .story-description {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .story-video {
@@ -314,7 +325,7 @@ nav {
 .story-video img {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 1.6rem;
 }
 
 .story-video button.play-button {
@@ -340,10 +351,10 @@ nav {
         "image content";
     grid-template-columns: 1fr 0.95fr;
     align-items: start;
-    margin: 5rem 0 10rem 0;
-    padding: 2.5rem 3.75rem 5rem 3.75rem;
+    margin: 10rem 0 16rem 0;
+    padding: 2rem 6rem 7.5rem 6rem;
     position: relative;
-    gap: 6rem;
+    gap: 10rem;
 }
 
 .product-image {
@@ -362,46 +373,46 @@ nav {
 
 .product-heading {
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #424242;
     margin: 0;
 }
 
 .product-main-heading {
-    margin: 1rem 0 1.25rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .product-description {
     margin: 0;
-    line-height: 2rem;
+    line-height: 157%;
 }
 
-.product .profile-card {
+.profile-card {
     display: flex;
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    left: 2.25rem;
+    left: 3.5rem;
     background-color: #ffffff;
     box-shadow: 0px 3.62px 18.11px 0px rgba(165, 165, 165, 0.25);
-    border-radius: 0.25rem;
-    width: 20.5%;
+    border-radius: 0.5rem;
+    width: 20%;
     color: #000000;
-    padding: 0 3.5rem;
+    padding: 1rem 3.5rem 3rem 3.5rem;
     box-sizing: border-box;
 }
 
-.product .profile-label {
+.profile-label {
     color: #000000;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     margin: 1.25rem 0 1rem 0;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.75rem;
 }
 
-.product .profile-image {
+.profile-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -410,31 +421,34 @@ nav {
     position: relative;
 }
 
-.product .profile-image img {
-    width: 10rem;
-    height: 10rem;
+.profile-image img {
+    width: 12rem;
+    height: 12rem;
     clip-path: circle(25% at 50% 40%);
     position: absolute;
-    top: -0.5rem;
+    top: -2rem;
 }
 
-.product .profile-image figcaption {
+.profile-image figcaption {
     margin: 6.5rem 0 0 0;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
 }
 
-.product .profile-content-label {
+.profile-content {
+    margin: 0 auto;
+}
+
+.profile-content-label {
     font-family: 'Georgia', serif;
     font-weight: 700;
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-align: left;
-    margin: 0.5rem auto;
 }
 
-.product .profile-card ul {
-    line-height: 2rem;
-    font-size: 0.625rem;
+.profile-card ul {
+    line-height: 2.5rem;
+    font-size: 1rem;
     padding: 0 1rem;
 }
 
@@ -442,23 +456,22 @@ nav {
 footer {
     background-color: var(--secondary-color);
     color: #ffffff;
-    padding: 6rem 3.75rem 9rem 3.75rem;
+    padding: 9.5rem 6rem 15rem 6rem;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 5rem;
+    gap: 10rem;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
-    margin-bottom: 5rem;
+    gap: 6rem;
 }
 
 .footer-brand {
-    font-family: 'Avenir', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Avenir', 'Lato', sans-serif; /* Fall back to Lato if Avenir is not available */
+    font-size: 4rem;
     font-weight: 900;
     color: #ffffff;
 }
@@ -466,8 +479,8 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
-    font-size: 1.5rem;
+    gap: 6rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #ffffff;
 }
@@ -475,13 +488,12 @@ footer {
 .footer-links a {
     color: #ffffff;
     text-decoration: none;
-    margin-bottom: 0.5rem;
 }
 
 .footer-logo {
     margin: 1rem;
     padding: 0.5rem;
-    height: 2rem;
+    height: 3rem;
     width: auto;
 }
 
@@ -492,24 +504,335 @@ footer {
 
 @media (max-width: 1439px) {
     html {
-        font-size: 80%;
+        scroll-padding-top: 7.5rem;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 3.5rem;
+    }
+
+    a.button {
+        padding: 1.5rem 4rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+
+    /* Header Section */
+    header {
+        height: 7rem;
+        padding: 1.5rem 2rem;
+        gap: 10%;
+    }
+    header .logo {
+        height: 1.8rem;
+    }
+    .nav-buttons {
+        gap: 2.5rem;
+    }
+    .nav-links ul {
+        gap: 5rem;
+    }
+    .nav-buttons a.button {
+        padding: 1rem 4rem;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        top: 12rem;
+        left: 5rem;
+        width: 35%;
+    }
+
+    .hero-heading {
+        font-size: 5rem;
+        margin: 0 0 2rem 0;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+        padding: 0 5rem;
+        margin: 13rem 0 4rem 0;
+        gap: 0 4rem;
+    }
+
+    .how-it-works-heading {
+        font-size: 2rem;
+    }
+    .how-it-works-main-heading {
+        margin: 0.8rem 0;
+    }
+
+    /* Steps Section */
+    .steps {
+        padding: 0 5rem;
+        margin: 0 0 4rem 0;
+        gap: 4rem;
+    }
+    .step-number {
+        font-size: 12rem;
+        margin: 1rem 0;
+    }
+    .step-heading {
+        font-size: 2.5rem;
+        left: 6rem;
+    }
+    .step-description {
+        margin: 4rem 0;
+    }
+    .step:nth-child(2) {
+        margin-top: 20rem;
+    }
+    .step:nth-child(3) {
+        margin-top: 4rem;
+    }
+
+    /* Story Section */
+    .story {
+        padding: 18rem 5rem 22rem 5rem;
+        gap: 2rem;
+    }
+    .story-heading {
+        margin-bottom: 2rem;
+    }
+    .story-description {
+        font-size: 2rem;
+    }
+
+    /* Product Section */
+    .product {
+        margin: 8rem 0 10rem 0;
+        padding: 2rem 5rem 6rem 5rem;
+        gap: 8rem;
+    }
+    .product-heading {
+        font-size: 2rem;
+    }
+    .product-main-heading {
+        margin: 0.8rem 0 1.6rem 0;
+    }
+    .profile-card {
+        width: 25%;
+        left: 2.5rem;
+        bottom: -2rem;
+    }
+    .profile-label {
+        font-size: 1.2rem;
+        margin: 1rem 0 0.8rem 0;
+    }
+    .profile-image img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .profile-image figcaption {
+        margin: 5.5rem 0 0 0;
+        font-size: 1rem;
+    }
+    .profile-content-label {
+        font-size: 1.4rem;
+    }
+    .profile-card ul {
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Footer Section */
+    footer {
+        padding: 7rem 5rem 12rem 5rem;
+        gap: 8rem;
+    }
+    .footer-content {
+        gap: 4rem;
+    }
+    .footer-brand {
+        font-size: 3rem;
+    }
+    .footer-links {
+        font-size: 2rem;
+        gap: 4rem;
+    }
+    .footer-logo {
+        height: 2.5rem;
     }
 }
 
 @media (max-width: 1023px) {
     html {
-        font-size: 60%;
+        scroll-padding-top: 6.5rem;
+    }
+    body {
+        font-size: 1.4rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 3rem;
+    }
+    a.button {
+        padding: 1.25rem 3rem;
+        font-size: 1.4rem;
+        margin-top: 2.5rem;
+    }
+
+    /* Header Section */
+    header {
+        height: 6rem;
+        padding: 1rem 1.5rem;
+        gap: 8%;
+    }
+    header .logo {
+        height: 1.5rem;
+    }
+    .nav-buttons {
+        gap: 2rem;
+    }
+    .nav-links ul {
+        gap: 3rem;
+    }
+    .nav-buttons a.button {
+        padding: 0.75rem 2.5rem;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        top: 10rem;
+        left: 2.5rem;
+        width: 37.5%;
+    }
+    .hero-heading {
+        font-size: 4rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+        padding: 0 2.5rem;
+        margin: 8rem 0 3rem 0;
+        gap: 0 3rem;
+    }
+    .how-it-works-heading {
+        font-size: 1.6rem;
+    }
+    .how-it-works-main-heading {
+        margin: 0.5rem 0;
+    }
+    
+    /* Steps Section */
+    .steps {
+        padding: 0 2.5rem;
+        margin: 0 0 3rem 0;
+        gap: 2rem;
+    }
+    .step-number {
+        font-size: 10rem;
+        margin: 0.5rem 0;
+    }
+    .step-heading {
+        font-size: 2rem;
+        left: 5.5rem;
+        margin: 2.25rem 0;
+    }
+    .step-description {
+        margin: 3rem 0;
+    }
+    .step:nth-child(2) {
+        margin-top: 15rem;
+    }
+    .step:nth-child(3) {
+        margin-top: 3rem;
+    }
+
+    /* Story Section */
+    .story {
+        padding: 12rem 2.5rem 15rem 2.5rem;
+        gap: 1.5rem;
+    }
+    .story-heading {
+        margin-bottom: 1.5rem;
+    }
+    .story-description {
+        font-size: 1.6rem;
+    }
+
+    /* Product Section */
+    .product {
+        margin: 6rem 0 10rem 0;
+        padding: 1.5rem 2.5rem 4.5rem 2.5rem;
+        gap: 4rem;
+    }
+    .product-heading {
+        font-size: 1.6rem;
+    }
+    .product-main-heading {
+        margin: 0.5rem 0 1.2rem 0;
+    }
+    .profile-card {
+        width: 25%;
+        left: 1.5rem;
+        bottom: -3rem;
+        padding: 1rem 1rem 2.5rem 1rem;
+    }
+    .profile-label {
+        font-size: 1rem;
+        margin: 0.8rem 0 0.5rem 0;
+    }
+    .profile-image img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .profile-image figcaption {
+        margin: 4.5rem 0 0 0;
+        font-size: 0.9rem;
+    }
+    .product .profile-content-label {
+        font-size: 1.2rem;
+    }
+    .product .profile-card ul {
+        line-height: 1.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 5rem 2.5rem 10rem 2.5rem;
+        gap: 6rem;
+    }
+    .footer-content {
+        gap: 3rem;
+    }
+    .footer-brand {
+        font-size: 2.5rem;
+    }
+    .footer-links {
+        font-size: 1.6rem;
+        gap: 3rem;
+    }
+    .footer-logo {
+        height: 2rem;
     }
 }
 
 @media (max-width: 767px) {
+    html {
+        scroll-padding-top: 5rem;
+    }
     body {
         font-size: 1rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2.5rem;
     }
     a.button {
         padding: 1rem 2rem;
         font-size: 1rem;
         margin-top: 1.5rem;
+    }
+
+    /* Mobile Navigation Header Section */
+    header {
+        height: 5rem;
+        padding: 0.75rem 1rem;
+        gap: 4%;
     }
     nav {
         display: none;
@@ -547,14 +870,21 @@ footer {
         display: block;
     }
 
+    /* Hero Section */
+    .hero-content {
+        top: 1.5rem;
+        left: 1rem;
+        width: 70%;
+    }
     .hero-heading {
         font-size: 2rem;
+        margin: 0 0 1rem 0;
     }
     .hero-description {
-        font-size: 1rem;
-        line-height: 1rem;
+        width: 50%;
     }
 
+    /* How It Works Section */
     .how-it-works {
         grid-template-areas:
             "header"
@@ -562,17 +892,18 @@ footer {
             "content";
         grid-template-columns: 1fr;
         padding: 0 1rem;
+        margin: 5rem 0 2rem 0;
     }
     .how-it-works-heading {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
     }
     .how-it-works-main-heading {
-        font-size: 2.5rem;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
         width: 100%;
     }
 
+    /* Steps Section */
     .steps {
         flex-direction: column;
         padding: 0 1rem;
@@ -582,85 +913,97 @@ footer {
         width: 100%;
         margin-top: 0;
     }
+    .step-number {
+        font-size: 8rem;
+        margin: 1rem 0;
+    }
+    .step-heading {
+        font-size: 2rem;
+        left: 3rem;
+    }
+    .step-description {
+        margin: 2rem 0;
+    }
     .step:nth-child(2) {
         margin-top: 0;
     }
-    .step-number {
-        font-size: 6rem;
-        margin: 1.5rem 0;
-    }
-    .step-heading {
-        font-size: 1.5rem;
-        left: 3rem;
-        top: 3.5rem;
+    .step:nth-child(3) {
+        margin-top: 0;
     }
 
+    /* Story Section */
     .story {
         grid-template-areas:
             "content"
             "video";
         grid-template-columns: 1fr;
-        padding: 5rem 1rem;
+        padding: 5rem 1rem 10rem 1rem;
         gap: 2rem;
     }
     .story-heading {
-        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .story-description {
+        font-size: 1.25rem;
     }
     .story button.play-button {
         width: 15%;
     }
     
+    /* Product Section */
     .product {
         grid-template-areas:
             "content"
             "image";
         grid-template-columns: 1fr;
-        padding: 2.5rem 1rem 5rem 1rem;
+        padding: 1rem 1rem 5rem 1rem;
+        margin: 3rem 0 8rem 0;
         gap: 2rem;
     }
     .product-heading {
         font-size: 1.25rem;
     }
     .product-main-heading {
-        font-size: 2.5rem;
+        margin: 0.5rem 0 1rem 0;
     }
-    .product .profile-card {
+    .profile-card {
         width: 45%;
         left: 0.5rem;
         bottom: -3rem;
     }
 
+    /* Footer */
     footer {
-        padding: 3.5rem 1rem 5rem 1rem;
+        padding: 4rem 1rem 8rem 1rem;
+        gap: 5rem;
     }
     .footer-content {
-        margin-bottom: 2rem;
+        gap: 2rem;
     }
     .footer-brand {
         font-size: 2rem;
     }
     .footer-links {
         font-size: 1.25rem;
+        gap: 2rem
+    }
+    .footer-logo {
+        height: 2rem;
     }
 }
 
-@media (max-width: 400px) {
-    a.button {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.875rem;
-        margin-top: 1rem;
-    }
-
+@media (max-width: 374px) {
     .hero-content {
-        width: 45%;
-        top: 5%;
+        top: 0.5rem;
+        width: 80%;
     }
 
-    .product .profile-card {
+    .profile-card {
         width: 50%;
-        left: 0.5rem;
+        padding: 1rem 1rem 2.5rem 1rem;
         bottom: -4rem;
     }
+
 }
 
 @keyframes rollDown {
