@@ -993,9 +993,23 @@ footer {
 }
 
 @media (max-width: 374px) {
+    a.button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+    
     .hero-content {
-        top: 0.5rem;
+        top: 0.75rem;
         width: 80%;
+    }
+    .hero-heading {
+        font-size: 1.75rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .hero-description {
+        font-size: 0.8rem;
+        width: 45%;
     }
 
     .profile-card {
