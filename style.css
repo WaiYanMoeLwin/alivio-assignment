@@ -342,6 +342,8 @@ nav {
     transform: translate(-50%, -50%);
     width: 10%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .play-button img:hover {
@@ -951,7 +953,7 @@ footer {
     .story-description {
         font-size: 1.25rem;
     }
-    .story button.play-button {
+    .story-video .button.play-button {
         width: 15%;
     }
     
