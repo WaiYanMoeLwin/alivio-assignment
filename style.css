@@ -692,16 +692,16 @@ footer {
     header {
         height: 6rem;
         padding: 1rem 1.5rem;
-        gap: 8rem;
+        gap: 6rem;
     }
     header .logo {
         height: 1.5rem;
     }
     .nav-buttons {
-        gap: 2rem;
+        gap: 1rem;
     }
     .nav-links ul {
-        gap: 3rem;
+        gap: 2rem;
     }
     .nav-buttons button {
         padding: 0.75rem 2.5rem;
